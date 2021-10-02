@@ -1,0 +1,7 @@
+./Debug/*
+./Release/*
+*.ncb
+*.opt
+*.plg
+TAKtick
+TAKtick.exe
