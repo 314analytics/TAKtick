@@ -263,13 +263,15 @@ static void add_participant(SOCKET listen_socket, struct server_context_type *ct
 
 static void terminate_participants(struct server_context_type *ctx, bool force_all)
 {
-	struct participant_list_struct *pnt, *prev_pnt;
+	struct participant_list_struct *pnt, *prev_pnt, *next_pnt;
 
 	pnt = ctx->participant_list_base;
 	prev_pnt = NULL;
 
 	while (pnt)
 	{
+		next_pnt = pnt->next;
+
 		if (pnt->closed || force_all)
 		{
 #if defined(_MSC_VER) || defined(__MINGW32__)
@@ -293,7 +295,7 @@ static void terminate_participants(struct server_context_type *ctx, bool force_a
 			prev_pnt = pnt;
 		}
 
-		pnt = pnt->next;
+		pnt = next_pnt;
 	}
 }
 
