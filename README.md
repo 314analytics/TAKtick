@@ -5,7 +5,7 @@ TAK     (tăk)     : Team Awareness Kit</br>
 tick    (tĭk)     : a bloodsucking arachnid</br>
 TAKtick (tăk′tĭk) : straightforward CoT/TAK TCP server</br>
 
-This multi-platform command-line tool was borne out of frustration with overly complex 'TAK server' and 'Cursor on Target router' solutions that have everything including the kitchen sink, would require installing a cornucopia of unknown extra libraries and software onto your PC, and then require a bevy of configuration settings once you hopefully managed to get the darn thing installed.
+This multi-platform command-line tool was born out of frustration with overly complex 'TAK server' and 'Cursor on Target router' solutions that have everything including the kitchen sink, would require installing a cornucopia of unknown extra libraries and software onto your PC, and then require a bevy of configuration settings once you hopefully managed to get the darn thing installed.
 
 This is TCP only, does not support SSL, and is not intended for a production environment.  However, when you just want something basic to do some TAK or CoT testing without a lot of fuss, perhaps this might suffice.
 
